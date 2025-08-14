@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uct66jSWhk4=",
+  "success": true,
+  "projectFilePath": "/home/danielr/Projects/TransportExpenses/TransportExpenses.Application/TransportExpenses.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/danielr/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.5/microsoft.aspnetcore.app.ref.9.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
