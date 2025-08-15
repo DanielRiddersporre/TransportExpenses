@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4w8p8SXqiOA=",
+  "dgSpecHash": "WPsQ3r6+hGo=",
   "success": true,
   "projectFilePath": "/home/danielr/Projects/TransportExpenses/TransportExpenses.UI/TransportExpenses.UI.csproj",
   "expectedPackageFiles": [
@@ -33,7 +33,7 @@
     "/home/danielr/.nuget/packages/skiasharp.nativeassets.win32/2.88.9/skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
     "/home/danielr/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/home/danielr/.nuget/packages/tmds.dbus.protocol/0.21.2/tmds.dbus.protocol.0.21.2.nupkg.sha512",
-    "/home/danielr/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.5/microsoft.aspnetcore.app.ref.9.0.5.nupkg.sha512"
+    "/home/danielr/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.7/microsoft.aspnetcore.app.ref.9.0.7.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,11 @@
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/bin/Debug/net9.0/TransportExpenses.Domain.deps.json
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/bin/Debug/net9.0/TransportExpenses.Domain.dll
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/bin/Debug/net9.0/TransportExpenses.Domain.pdb
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/obj/Debug/net9.0/TransportExpenses.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/obj/Debug/net9.0/TransportExpenses.Domain.AssemblyInfoInputs.cache
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/obj/Debug/net9.0/TransportExpenses.Domain.AssemblyInfo.cs
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/obj/Debug/net9.0/TransportExpenses.Domain.csproj.CoreCompileInputs.cache
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/obj/Debug/net9.0/TransportExpenses.Domain.dll
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/obj/Debug/net9.0/refint/TransportExpenses.Domain.dll
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/obj/Debug/net9.0/TransportExpenses.Domain.pdb
+/home/danielr/Projects/TransportExpenses/TransportExpenses.Domain/obj/Debug/net9.0/ref/TransportExpenses.Domain.dll

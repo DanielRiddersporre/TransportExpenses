@@ -598,6 +598,29 @@
         "runtime": {
           "lib/net8.0/Tmds.DBus.Protocol.dll": {}
         }
+      },
+      "TransportExpenses.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "TransportExpenses.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TransportExpenses.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TransportExpenses.Application.dll": {}
+        }
+      },
+      "TransportExpenses.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/TransportExpenses.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TransportExpenses.Domain.dll": {}
+        }
       }
     }
   },
@@ -1451,6 +1474,16 @@
         "tmds.dbus.protocol.0.21.2.nupkg.sha512",
         "tmds.dbus.protocol.nuspec"
       ]
+    },
+    "TransportExpenses.Application/1.0.0": {
+      "type": "project",
+      "path": "../TransportExpenses.Application/TransportExpenses.Application.csproj",
+      "msbuildProject": "../TransportExpenses.Application/TransportExpenses.Application.csproj"
+    },
+    "TransportExpenses.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TransportExpenses.Domain/TransportExpenses.Domain.csproj",
+      "msbuildProject": "../TransportExpenses.Domain/TransportExpenses.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1460,7 +1493,8 @@
       "Avalonia.Diagnostics >= 11.3.3",
       "Avalonia.Fonts.Inter >= 11.3.3",
       "Avalonia.Themes.Fluent >= 11.3.3",
-      "CommunityToolkit.Mvvm >= 8.2.1"
+      "CommunityToolkit.Mvvm >= 8.2.1",
+      "TransportExpenses.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1487,7 +1521,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/danielr/Projects/TransportExpenses/TransportExpenses.Application/TransportExpenses.Application.csproj": {
+              "projectPath": "/home/danielr/Projects/TransportExpenses/TransportExpenses.Application/TransportExpenses.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1545,7 +1583,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[9.0.5, 9.0.5]"
+            "version": "[9.0.7, 9.0.7]"
           }
         ],
         "frameworkReferences": {
@@ -1553,7 +1591,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.106/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.108/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

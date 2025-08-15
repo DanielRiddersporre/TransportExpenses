@@ -1,6 +1,4 @@
-using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using System.Linq;
 using Avalonia.Markup.Xaml;
@@ -9,7 +7,7 @@ using TransportExpenses.UI.Views;
 
 namespace TransportExpenses.UI;
 
-public partial class App : Application
+public partial class App : Avalonia.Application
 {
     public override void Initialize()
     {
