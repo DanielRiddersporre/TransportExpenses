@@ -1,0 +1,11 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModels="clr-namespace:TransportExpenses.UI.ViewModels"
+             x:Class="TransportExpenses.UI.Views.AddExpenseView"
+             x:DataType="viewModels:AddExpenseViewModel">
+    <StackPanel Margin="20" Spacing="10" Width="200">
+        <TextBox Watermark="Titel" Text="{Binding Title, Mode=TwoWay}"/>
+        <TextBox Watermark="Belopp" Text="{Binding Amount, Mode=TwoWay}"/>
+        <Button Content="Lägg till" Command="{Binding AddExpenseCommand}"/>
+    </StackPanel>
+</UserControl>
