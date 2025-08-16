@@ -9,6 +9,7 @@ public class DependencyInjection
      public static IServiceCollection AddApplicationServices(IServiceCollection services)
      {
           services.AddScoped<IExpenseRepository, ExpenseRepository>();
+          services.AddScoped<ITransportationRepository, TransportationRepository>();
           return services;
      }
 }
