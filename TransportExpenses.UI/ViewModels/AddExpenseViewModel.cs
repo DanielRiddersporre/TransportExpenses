@@ -1,7 +1,11 @@
 using System;
+using System.Collections.Generic;
 using ReactiveUI;
 using System.Reactive;
 using System.Threading.Tasks;
+using TransportExpenses.Application.UseCases;
+using TransportExpenses.Domain.Entities;
+using TransportExpenses.Domain.Enums;
 
 namespace TransportExpenses.UI.ViewModels
 {
@@ -9,6 +13,10 @@ namespace TransportExpenses.UI.ViewModels
     {
         private string _title = string.Empty;
         private string _amount = string.Empty;
+        private string _description = string.Empty;
+        private ExpenseType _selectedExpenseType;
+        
+        public IEnumerable<ExpenseType> ExpenseTypes { get; } = Enum.GetValues<ExpenseType>();
 
         public string Title
         {
@@ -22,10 +30,24 @@ namespace TransportExpenses.UI.ViewModels
             set => this.RaiseAndSetIfChanged(ref _amount, value);
         }
 
-        public ReactiveCommand<Unit, Unit> AddExpenseCommand { get; }
-
-        public AddExpenseViewModel()
+        public string Description
         {
+            get => _description;
+            set => this.RaiseAndSetIfChanged(ref _description, value);
+        }
+
+        public ExpenseType SelectedExpenseType
+        {
+            get => _selectedExpenseType;
+            set => this.RaiseAndSetIfChanged(ref _selectedExpenseType, value);
+        }
+
+        public ReactiveCommand<Unit, Unit> AddExpenseCommand { get; }
+        private readonly AddExpenseUseCase _addExpenseUseCase;
+
+        public AddExpenseViewModel(AddExpenseUseCase addExpenseUseCase)
+        {
+            _addExpenseUseCase = addExpenseUseCase;
             AddExpenseCommand = ReactiveCommand.CreateFromTask(AddExpense);
         }
 
@@ -42,9 +64,10 @@ namespace TransportExpenses.UI.ViewModels
                 Console.WriteLine("Beloppet måste vara ett nummer!");
                 return;
             }
+            
+            var expense = new Expense(DateTime.Now, _title, parsedAmount, _selectedExpenseType);
 
-            Console.WriteLine($"Ny utgift skapad: {Title}, {parsedAmount}");
-            await Task.CompletedTask;
+            await _addExpenseUseCase.ExecuteAsync(expense);
         }
     }
 }

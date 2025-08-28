@@ -1,6 +1,13 @@
-﻿namespace TransportExpenses.UI.ViewModels;
+﻿using System.Collections.ObjectModel;
+
+namespace TransportExpenses.UI.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    public string Greeting { get; } = "Welcome to Avalonia!";
+    public AddExpenseViewModel AddExpenseViewModel { get; }
+
+    public MainWindowViewModel(AddExpenseViewModel addExpenseViewModel)
+    {
+        AddExpenseViewModel = addExpenseViewModel;
+    }
 }

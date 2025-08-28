@@ -16,6 +16,8 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <views:AddExpenseView />
+    <Grid>
+        <views:AddExpenseView DataContext="{Binding AddExpenseViewModel}"/>
+    </Grid>
 
 </Window>
